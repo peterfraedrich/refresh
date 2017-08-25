@@ -23,3 +23,16 @@ optional arguments:
                         The command to loop. Pipes and special characters must
                         be quoted!
 ```
+
+### Examples
+
+To query the status of `httpd` every 1 second:
+```
+$> re --command systemctl status httpd
+```
+
+To watch a folder:
+```
+$> re -n 10 -c ls /some/path
+```
+
